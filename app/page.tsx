@@ -1,13 +1,13 @@
 'use client'
 import Meteors from "@/components/ui/meteors"
 import { DockDemo } from "./Dockdemo"
-import SlightFlip from "@/components/ui/flip-text"
-import HyperText from "@/components/ui/hyper-text"
+// import SlightFlip from "@/components/ui/flip-text"
+// import HyperText from "@/components/ui/hyper-text"
 import WordPullUp from "@/components/ui/word-pull-up"
 import BlurFade from "@/components/ui/blur-fade"
 import useDark from "./hooks/useDark"
-import OrbitingCircles from "@/components/ui/orbiting-circles"
-export default function page(){
+// import OrbitingCircles from "@/components/ui/orbiting-circles"
+export default function Home(){
   const {dark} =useDark()
   return(
     <div className={dark?"dark":""}>

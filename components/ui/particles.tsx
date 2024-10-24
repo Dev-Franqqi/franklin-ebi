@@ -268,7 +268,6 @@ const Particles: React.FC<ParticlesProps> = ({
     });
     window.requestAnimationFrame(animate);
   };
-
   return (
     <div
       className={cn("pointer-events-none", className)}
