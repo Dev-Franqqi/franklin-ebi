@@ -2,7 +2,7 @@
 
 import React, { PropsWithChildren, useRef } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import {motion, MotionValue, useSpring, useTransform} from "framer-motion"
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -10,7 +10,6 @@ export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string;
   magnification?: number;
   distance?: number;
-  mouseX?:MotionValue;
   direction?: "top" | "middle" | "bottom";
   children: React.ReactNode;
 }
@@ -34,7 +33,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     },
     ref,
   ) => {
-    // const mouseX = useMotionValue(Infinity);
+    const mouseX = useMotionValue(Infinity);
 
     const renderChildren = () => {
       return React.Children.map(children, (child) => {
@@ -74,7 +73,7 @@ export interface DockIconProps {
   size?: number;
   magnification?: number;
   distance?: number;
-  mouseX?: MotionValue;
+  mouseX?: any;
   className?: string;
   children?: React.ReactNode;
   props?: PropsWithChildren;

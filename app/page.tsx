@@ -1,5 +1,5 @@
 'use client'
-import Meteors from "@/components/ui/meteors"
+// import Meteors from "@/components/ui/meteors"
 import { DockDemo } from "./Dockdemo"
 // import SlightFlip from "@/components/ui/flip-text"
 // import HyperText from "@/components/ui/hyper-text"
@@ -18,7 +18,7 @@ export default function Home(){
 
     
 
-      <Meteors number={30} />
+      {/* <Meteors number={30} /> */}
     
     <BlurFade delay={0.25} inView>
 

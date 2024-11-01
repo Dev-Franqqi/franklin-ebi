@@ -4,6 +4,7 @@ import { Dock, DockIcon } from "@/components/ui/dock";
 import { Separator } from "../components/ui/separator";
 import { HomeIcon, Sun } from "lucide-react";
 import useDark from "./hooks/useDark";
+import Link from "next/link";
 import { TwitterLogoIcon } from "@radix-ui/react-icons";
 import {
   Tooltip,
@@ -39,13 +40,20 @@ export function DockDemo() {
       <Separator orientation="vertical" className='h-full ' />
       
       <DockIcon>
+        <Link href="https://x.com/franklinEsendu" target="_blank">
         <TwitterLogoIcon className="size-6" />
+        </Link>
       </DockIcon>
       <DockIcon>
+        <Link href="https://github.com/dev-franqqi" target="_blankm">
         <Icons.gitHub  className="size-6" />
+        </Link>
       </DockIcon>
       <DockIcon>
+        <Link href="https://wa.me/+2347047669823" target="_blank">
         <Icons.whatsapp className="size-6" />
+
+        </Link>
       </DockIcon>
       <Separator orientation="vertical" className='h-full ' />
       <DockIcon>
